@@ -1,0 +1,42 @@
+.home {
+  float: left;
+  position: absolute;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td {
+  border: 1px solid #ccc;
+  padding: 10px 0;
+  text-align: center;
+}
+
+table tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+table tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
+}
+
+body {
+  width: calc(100vw - 2rem);
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+  font-size: 20px;
+}
+
+.title {
+  margin: 0.5em 0;
+  text-align: center;
+  color: green;
+}

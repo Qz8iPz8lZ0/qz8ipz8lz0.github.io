@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: calc(100vw - 2rem);
+  max-width: 1024px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+a {
+  color: blue;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+font {
+  color: black !important;
+  font-family: unset;
+  font-size: 1.5em;
+}
+
+blockquote > p {
+  margin-bottom: 1em;
+}
+
+blockquote,
+p {
+  margin: 0;
+}
+
+td {
+  padding: 0;
+}
+
+table,
+#table6 {
+  border: none !important;
+}
+
+.text12_150 {
+  line-height: 150%;
+}

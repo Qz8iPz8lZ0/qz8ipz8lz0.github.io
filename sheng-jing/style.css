@@ -1,0 +1,126 @@
+.home {
+  float: left;
+  position: absolute;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td {
+  border: 1px solid #ccc;
+  padding: 10px 0;
+  text-align: center;
+}
+
+table tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+table tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
+}
+
+body {
+  width: calc(100vw - 2rem);
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+  font-size: 20px;
+}
+
+.title {
+  margin: 0.5em 0;
+  text-align: center;
+  color: green;
+}
+
+.note {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 0.9em;
+}
+
+.note_back {
+  font-weight: bolder;
+}
+
+.abreak {
+  page-break-after: always;
+}
+
+.bbreak {
+  page-break-before: always;
+}
+
+.chapter {
+  color: blue;
+  font-weight: bolder;
+  padding-left: 0.2cm;
+  padding-right: 0.2cm;
+  line-height: 1.2cm;
+  font-size: 1.4em;
+}
+
+.chapterBreak {
+  display: block;
+  line-height: 2em;
+}
+
+.plink {
+  color: #000000;
+}
+
+sup {
+  color: Red;
+}
+
+.verse {
+  font-weight: bolder;
+}
+
+.O0 {
+  color: #800000;
+  padding-left: 1.5em;
+  display: block;
+}
+
+.O1 {
+  color: #800000;
+  padding-left: 2em;
+  display: block;
+}
+
+.O2 {
+  color: #800000;
+  padding-left: 2.5em;
+  display: block;
+  font-size: 0.9em;
+}
+
+.O3 {
+  color: #800000;
+  padding-left: 3em;
+  display: block;
+  font-size: 0.85em;
+}
+
+.O4 {
+  color: #800000;
+  padding-left: 3.5em;
+  display: block;
+  font-size: 0.8em;
+}
+
+.O5 {
+  color: #800000;
+  padding-left: 4em;
+  display: block;
+  font-size: 0.8em;
+}
