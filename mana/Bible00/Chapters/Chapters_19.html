@@ -1,0 +1,286 @@
+<html><!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, user-scalable=yes">
+    <title>诗篇-Psalms</title>
+    <link rel="stylesheet" href="../Content/css/jquery.mobile-1.4.2.min.css"  />
+    <link rel="stylesheet" href="../Content/css/desktop.css"  />
+    <link rel="stylesheet" href="../Content/css/jplayer.morning.light.simple.css"  />
+    <link rel="stylesheet" href="../Content/css/style.css"  />
+    <link rel="stylesheet" href="../Content/css/site.css"  />
+
+    <script src="../Content/js/jquery-1.9.1.min.js" ></script>
+    <script src="../Content/js/jquery.jplayer.min.js" ></script>
+    <script src="../Content/js/jplayer.playlist.min.js" ></script>
+
+    <script src="../Content/js/site.js" ></script>
+
+    <script src="../Content/js/jquery.mobile-1.4.2.min.js" ></script>
+    <script id="panel-init">
+  $(function () {
+$("[data-role='panel']").panel();
+$("[data-role='listview']").listview({ "icon": "" });
+  });
+
+
+  $(document).on('pagebeforecreate', function (ev) {
+$(ev.target).find("[data-role=header]").addClass("jqm-header");
+var content = $(ev.target).find("[data-role=content]");
+var clone = $("[data-role=side-bar]").clone();
+var parent = $(clone.children()[1]).children()[0];
+$(parent).html($(content).html());
+clone.css("display", "block");
+$(content).empty();
+$(content).html(clone.html());
+  });
+
+  $(document).on('pagecreate', function (ev) {
+$(ev.target).find("[data-icon=bars]").remove();
+  });
+
+  $(document).on("pageshow", function () {
+if ($("#jsCode").length > 0) {
+    $.globalEval($("#jsCode").text());
+}
+  });
+</script>
+</head>
+<body>
+    <div data-role="side-bar" class="ui-grid-a" style="margin-top: 0px; width: 100%; height:100%;display: none">
+  <div class="ui-block-a">
+  </div>
+  <div class="ui-block-b" style="width: 100%; padding-left: 5px">
+<div data-role="main" class="mainPage">  
+</div>
+  </div>
+    </div>
+
+<div data-role="panel" data-position="right" data-position-fixed="false" data-display="overlay" id="setting-panel" data-theme="a" style="width:220px">
+    <ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+  <li data-icon="delete" style="background-color:rgba(255,255,255,0.15);">
+&nbsp;
+  </li>
+  <li data-filtertext="ajax navigation model"><a target="_self" href="../Bible.html"  rel="external" data-ajax="false">圣经总目录</a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_1.html" >01 创世记 (创)<span class="ui-li-count">50</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_2.html" >02 出埃及记 (出)<span class="ui-li-count">40</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_3.html" >03 利未记 (利)<span class="ui-li-count">27</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_4.html" >04 民数记 (民)<span class="ui-li-count">36</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_5.html" >05 申命记 (申)<span class="ui-li-count">34</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_6.html" >06 约书亚记 (书)<span class="ui-li-count">24</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_7.html" >07 士师记 (士)<span class="ui-li-count">21</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_8.html" >08 路得记 (得)<span class="ui-li-count">4</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_9.html" >09 撒母耳记上 (撒上)<span class="ui-li-count">31</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_10.html" >10 撒母耳记下 (撒下)<span class="ui-li-count">24</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_11.html" >11 列王记上 (王上)<span class="ui-li-count">22</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_12.html" >12 列王记下 (王下)<span class="ui-li-count">25</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_13.html" >13 历代志上 (代上)<span class="ui-li-count">29</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_14.html" >14 历代志下 (代下)<span class="ui-li-count">36</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_15.html" >15 以斯拉记 (拉)<span class="ui-li-count">10</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_16.html" >16 尼希米记 (尼)<span class="ui-li-count">13</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_17.html" >17 以斯帖记 (斯)<span class="ui-li-count">10</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_18.html" >18 约伯记 (伯)<span class="ui-li-count">42</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_19.html" >19 诗篇 (诗)<span class="ui-li-count">150</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_20.html" >20 箴言 (箴)<span class="ui-li-count">31</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_21.html" >21 传道书 (传)<span class="ui-li-count">12</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_22.html" >22 雅歌 (歌)<span class="ui-li-count">8</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_23.html" >23 以赛亚书 (赛)<span class="ui-li-count">66</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_24.html" >24 耶利米书 (耶)<span class="ui-li-count">52</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_25.html" >25 耶利米哀歌 (哀)<span class="ui-li-count">5</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_26.html" >26 以西结书 (结)<span class="ui-li-count">48</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_27.html" >27 但以理书 (但)<span class="ui-li-count">12</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_28.html" >28 何西阿书 (何)<span class="ui-li-count">14</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_29.html" >29 约珥书 (珥)<span class="ui-li-count">3</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_30.html" >30 阿摩司书 (摩)<span class="ui-li-count">9</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_31.html" >31 俄巴底亚书 (俄)<span class="ui-li-count">1</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_32.html" >32 约拿书 (拿)<span class="ui-li-count">4</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_33.html" >33 弥迦书 (弥)<span class="ui-li-count">7</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_34.html" >34 那鸿书 (鸿)<span class="ui-li-count">3</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_35.html" >35 哈巴谷书 (哈)<span class="ui-li-count">3</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_36.html" >36 西番雅书 (番)<span class="ui-li-count">3</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_37.html" >37 哈该书 (该)<span class="ui-li-count">2</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_38.html" >38 撒迦利亚书 (亚)<span class="ui-li-count">14</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_39.html" >39 玛拉基书 (玛)<span class="ui-li-count">4</span></a></li>
+  </ul>
+    <!-- panel content goes here -->
+</div><!-- /panel -->
+
+
+
+<div data-role="page" class="jqm-demos jqm-home" id="home">
+    <div data-role="header" data-position="fixed">
+        <a target="_self" href="Chapters_19.html#nav-panel" data-icon="bars" data-iconpos="notext">Navigation</a>
+        <h3>诗篇-Psalms</h3>
+        <a target="_self" href="Chapters_19.html#setting-panel" data-icon="gear" data-iconpos="notext">Settings</a>
+    </div><!-- /header -->
+
+    <div data-role="content" id="home-content">
+        <div style="font-size:14px;">主题：寻求并接触神的敬虔之人，藉着赞美、祷告、并欢腾的歌唱，所表达的情绪、感觉、感想和经历</div>
+            <div data-role="collapsible">
+                <h3>简介</h3>
+                <ul style="padding-left:20px">
+                    <li>著者　大卫作诗七十三篇，（三～九，十一～三二，三四～四一，五一～六五，六八～七十，八六，一○一，一○三，一○八～一一○，一二二，一二四，一三一，一三三，一三八～一四五，）可拉子孙十二篇，（四二～四九，八四～八五，八七～八八，）亚萨十二篇，（五十，七三～八三，）所罗门二篇，（七二，一二七，）以探一篇，（八九，）摩西一篇。（九十。）其余四十九篇著者不详。</li>
+                    <li>著时　始于主前第十一世纪（第九十篇除外，该诗由摩西写于主前第十五世纪。）</li>
+                    <li>著地　主要在耶路撒冷。</li>
+                </ul>
+
+            </div>
+        <ul data-role="listview" data-inset="true">        
+    <li><a target="_self" href="../Show/Pas001.html" >第1篇</a></li>      
+    <li><a target="_self" href="../Show/Pas002.html" >第2篇</a></li>      
+    <li><a target="_self" href="../Show/Pas003.html" >第3篇</a></li>      
+    <li><a target="_self" href="../Show/Pas004.html" >第4篇</a></li>      
+    <li><a target="_self" href="../Show/Pas005.html" >第5篇</a></li>      
+    <li><a target="_self" href="../Show/Pas006.html" >第6篇</a></li>      
+    <li><a target="_self" href="../Show/Pas007.html" >第7篇</a></li>      
+    <li><a target="_self" href="../Show/Pas008.html" >第8篇</a></li>      
+    <li><a target="_self" href="../Show/Pas009.html" >第9篇</a></li>      
+    <li><a target="_self" href="../Show/Pas010.html" >第10篇</a></li>      
+    <li><a target="_self" href="../Show/Pas011.html" >第11篇</a></li>      
+    <li><a target="_self" href="../Show/Pas012.html" >第12篇</a></li>      
+    <li><a target="_self" href="../Show/Pas013.html" >第13篇</a></li>      
+    <li><a target="_self" href="../Show/Pas014.html" >第14篇</a></li>      
+    <li><a target="_self" href="../Show/Pas015.html" >第15篇</a></li>      
+    <li><a target="_self" href="../Show/Pas016.html" >第16篇</a></li>      
+    <li><a target="_self" href="../Show/Pas017.html" >第17篇</a></li>      
+    <li><a target="_self" href="../Show/Pas018.html" >第18篇</a></li>      
+    <li><a target="_self" href="../Show/Pas019.html" >第19篇</a></li>      
+    <li><a target="_self" href="../Show/Pas020.html" >第20篇</a></li>      
+    <li><a target="_self" href="../Show/Pas021.html" >第21篇</a></li>      
+    <li><a target="_self" href="../Show/Pas022.html" >第22篇</a></li>      
+    <li><a target="_self" href="../Show/Pas023.html" >第23篇</a></li>      
+    <li><a target="_self" href="../Show/Pas024.html" >第24篇</a></li>      
+    <li><a target="_self" href="../Show/Pas025.html" >第25篇</a></li>      
+    <li><a target="_self" href="../Show/Pas026.html" >第26篇</a></li>      
+    <li><a target="_self" href="../Show/Pas027.html" >第27篇</a></li>      
+    <li><a target="_self" href="../Show/Pas028.html" >第28篇</a></li>      
+    <li><a target="_self" href="../Show/Pas029.html" >第29篇</a></li>      
+    <li><a target="_self" href="../Show/Pas030.html" >第30篇</a></li>      
+    <li><a target="_self" href="../Show/Pas031.html" >第31篇</a></li>      
+    <li><a target="_self" href="../Show/Pas032.html" >第32篇</a></li>      
+    <li><a target="_self" href="../Show/Pas033.html" >第33篇</a></li>      
+    <li><a target="_self" href="../Show/Pas034.html" >第34篇</a></li>      
+    <li><a target="_self" href="../Show/Pas035.html" >第35篇</a></li>      
+    <li><a target="_self" href="../Show/Pas036.html" >第36篇</a></li>      
+    <li><a target="_self" href="../Show/Pas037.html" >第37篇</a></li>      
+    <li><a target="_self" href="../Show/Pas038.html" >第38篇</a></li>      
+    <li><a target="_self" href="../Show/Pas039.html" >第39篇</a></li>      
+    <li><a target="_self" href="../Show/Pas040.html" >第40篇</a></li>      
+    <li><a target="_self" href="../Show/Pas041.html" >第41篇</a></li>      
+    <li><a target="_self" href="../Show/Pas042.html" >第42篇</a></li>      
+    <li><a target="_self" href="../Show/Pas043.html" >第43篇</a></li>      
+    <li><a target="_self" href="../Show/Pas044.html" >第44篇</a></li>      
+    <li><a target="_self" href="../Show/Pas045.html" >第45篇</a></li>      
+    <li><a target="_self" href="../Show/Pas046.html" >第46篇</a></li>      
+    <li><a target="_self" href="../Show/Pas047.html" >第47篇</a></li>      
+    <li><a target="_self" href="../Show/Pas048.html" >第48篇</a></li>      
+    <li><a target="_self" href="../Show/Pas049.html" >第49篇</a></li>      
+    <li><a target="_self" href="../Show/Pas050.html" >第50篇</a></li>      
+    <li><a target="_self" href="../Show/Pas051.html" >第51篇</a></li>      
+    <li><a target="_self" href="../Show/Pas052.html" >第52篇</a></li>      
+    <li><a target="_self" href="../Show/Pas053.html" >第53篇</a></li>      
+    <li><a target="_self" href="../Show/Pas054.html" >第54篇</a></li>      
+    <li><a target="_self" href="../Show/Pas055.html" >第55篇</a></li>      
+    <li><a target="_self" href="../Show/Pas056.html" >第56篇</a></li>      
+    <li><a target="_self" href="../Show/Pas057.html" >第57篇</a></li>      
+    <li><a target="_self" href="../Show/Pas058.html" >第58篇</a></li>      
+    <li><a target="_self" href="../Show/Pas059.html" >第59篇</a></li>      
+    <li><a target="_self" href="../Show/Pas060.html" >第60篇</a></li>      
+    <li><a target="_self" href="../Show/Pas061.html" >第61篇</a></li>      
+    <li><a target="_self" href="../Show/Pas062.html" >第62篇</a></li>      
+    <li><a target="_self" href="../Show/Pas063.html" >第63篇</a></li>      
+    <li><a target="_self" href="../Show/Pas064.html" >第64篇</a></li>      
+    <li><a target="_self" href="../Show/Pas065.html" >第65篇</a></li>      
+    <li><a target="_self" href="../Show/Pas066.html" >第66篇</a></li>      
+    <li><a target="_self" href="../Show/Pas067.html" >第67篇</a></li>      
+    <li><a target="_self" href="../Show/Pas068.html" >第68篇</a></li>      
+    <li><a target="_self" href="../Show/Pas069.html" >第69篇</a></li>      
+    <li><a target="_self" href="../Show/Pas070.html" >第70篇</a></li>      
+    <li><a target="_self" href="../Show/Pas071.html" >第71篇</a></li>      
+    <li><a target="_self" href="../Show/Pas072.html" >第72篇</a></li>      
+    <li><a target="_self" href="../Show/Pas073.html" >第73篇</a></li>      
+    <li><a target="_self" href="../Show/Pas074.html" >第74篇</a></li>      
+    <li><a target="_self" href="../Show/Pas075.html" >第75篇</a></li>      
+    <li><a target="_self" href="../Show/Pas076.html" >第76篇</a></li>      
+    <li><a target="_self" href="../Show/Pas077.html" >第77篇</a></li>      
+    <li><a target="_self" href="../Show/Pas078.html" >第78篇</a></li>      
+    <li><a target="_self" href="../Show/Pas079.html" >第79篇</a></li>      
+    <li><a target="_self" href="../Show/Pas080.html" >第80篇</a></li>      
+    <li><a target="_self" href="../Show/Pas081.html" >第81篇</a></li>      
+    <li><a target="_self" href="../Show/Pas082.html" >第82篇</a></li>      
+    <li><a target="_self" href="../Show/Pas083.html" >第83篇</a></li>      
+    <li><a target="_self" href="../Show/Pas084.html" >第84篇</a></li>      
+    <li><a target="_self" href="../Show/Pas085.html" >第85篇</a></li>      
+    <li><a target="_self" href="../Show/Pas086.html" >第86篇</a></li>      
+    <li><a target="_self" href="../Show/Pas087.html" >第87篇</a></li>      
+    <li><a target="_self" href="../Show/Pas088.html" >第88篇</a></li>      
+    <li><a target="_self" href="../Show/Pas089.html" >第89篇</a></li>      
+    <li><a target="_self" href="../Show/Pas090.html" >第90篇</a></li>      
+    <li><a target="_self" href="../Show/Pas091.html" >第91篇</a></li>      
+    <li><a target="_self" href="../Show/Pas092.html" >第92篇</a></li>      
+    <li><a target="_self" href="../Show/Pas093.html" >第93篇</a></li>      
+    <li><a target="_self" href="../Show/Pas094.html" >第94篇</a></li>      
+    <li><a target="_self" href="../Show/Pas095.html" >第95篇</a></li>      
+    <li><a target="_self" href="../Show/Pas096.html" >第96篇</a></li>      
+    <li><a target="_self" href="../Show/Pas097.html" >第97篇</a></li>      
+    <li><a target="_self" href="../Show/Pas098.html" >第98篇</a></li>      
+    <li><a target="_self" href="../Show/Pas099.html" >第99篇</a></li>      
+    <li><a target="_self" href="../Show/Pas100.html" >第100篇</a></li>      
+    <li><a target="_self" href="../Show/Pas101.html" >第101篇</a></li>      
+    <li><a target="_self" href="../Show/Pas102.html" >第102篇</a></li>      
+    <li><a target="_self" href="../Show/Pas103.html" >第103篇</a></li>      
+    <li><a target="_self" href="../Show/Pas104.html" >第104篇</a></li>      
+    <li><a target="_self" href="../Show/Pas105.html" >第105篇</a></li>      
+    <li><a target="_self" href="../Show/Pas106.html" >第106篇</a></li>      
+    <li><a target="_self" href="../Show/Pas107.html" >第107篇</a></li>      
+    <li><a target="_self" href="../Show/Pas108.html" >第108篇</a></li>      
+    <li><a target="_self" href="../Show/Pas109.html" >第109篇</a></li>      
+    <li><a target="_self" href="../Show/Pas110.html" >第110篇</a></li>      
+    <li><a target="_self" href="../Show/Pas111.html" >第111篇</a></li>      
+    <li><a target="_self" href="../Show/Pas112.html" >第112篇</a></li>      
+    <li><a target="_self" href="../Show/Pas113.html" >第113篇</a></li>      
+    <li><a target="_self" href="../Show/Pas114.html" >第114篇</a></li>      
+    <li><a target="_self" href="../Show/Pas115.html" >第115篇</a></li>      
+    <li><a target="_self" href="../Show/Pas116.html" >第116篇</a></li>      
+    <li><a target="_self" href="../Show/Pas117.html" >第117篇</a></li>      
+    <li><a target="_self" href="../Show/Pas118.html" >第118篇</a></li>      
+    <li><a target="_self" href="../Show/Pas119.html" >第119篇</a></li>      
+    <li><a target="_self" href="../Show/Pas120.html" >第120篇</a></li>      
+    <li><a target="_self" href="../Show/Pas121.html" >第121篇</a></li>      
+    <li><a target="_self" href="../Show/Pas122.html" >第122篇</a></li>      
+    <li><a target="_self" href="../Show/Pas123.html" >第123篇</a></li>      
+    <li><a target="_self" href="../Show/Pas124.html" >第124篇</a></li>      
+    <li><a target="_self" href="../Show/Pas125.html" >第125篇</a></li>      
+    <li><a target="_self" href="../Show/Pas126.html" >第126篇</a></li>      
+    <li><a target="_self" href="../Show/Pas127.html" >第127篇</a></li>      
+    <li><a target="_self" href="../Show/Pas128.html" >第128篇</a></li>      
+    <li><a target="_self" href="../Show/Pas129.html" >第129篇</a></li>      
+    <li><a target="_self" href="../Show/Pas130.html" >第130篇</a></li>      
+    <li><a target="_self" href="../Show/Pas131.html" >第131篇</a></li>      
+    <li><a target="_self" href="../Show/Pas132.html" >第132篇</a></li>      
+    <li><a target="_self" href="../Show/Pas133.html" >第133篇</a></li>      
+    <li><a target="_self" href="../Show/Pas134.html" >第134篇</a></li>      
+    <li><a target="_self" href="../Show/Pas135.html" >第135篇</a></li>      
+    <li><a target="_self" href="../Show/Pas136.html" >第136篇</a></li>      
+    <li><a target="_self" href="../Show/Pas137.html" >第137篇</a></li>      
+    <li><a target="_self" href="../Show/Pas138.html" >第138篇</a></li>      
+    <li><a target="_self" href="../Show/Pas139.html" >第139篇</a></li>      
+    <li><a target="_self" href="../Show/Pas140.html" >第140篇</a></li>      
+    <li><a target="_self" href="../Show/Pas141.html" >第141篇</a></li>      
+    <li><a target="_self" href="../Show/Pas142.html" >第142篇</a></li>      
+    <li><a target="_self" href="../Show/Pas143.html" >第143篇</a></li>      
+    <li><a target="_self" href="../Show/Pas144.html" >第144篇</a></li>      
+    <li><a target="_self" href="../Show/Pas145.html" >第145篇</a></li>      
+    <li><a target="_self" href="../Show/Pas146.html" >第146篇</a></li>      
+    <li><a target="_self" href="../Show/Pas147.html" >第147篇</a></li>      
+    <li><a target="_self" href="../Show/Pas148.html" >第148篇</a></li>      
+    <li><a target="_self" href="../Show/Pas149.html" >第149篇</a></li>      
+    <li><a target="_self" href="../Show/Pas150.html" >第150篇</a></li>      
+        </ul>    
+    </div><!-- /content -->
+</div><!-- /page -->
+
+
+<body>
+</html>

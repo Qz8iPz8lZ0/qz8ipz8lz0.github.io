@@ -1,0 +1,127 @@
+<html><!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, user-scalable=yes">
+<title>哥林多前书-1 Corinthians</title>
+<link rel="stylesheet" href="../Content/css/jquery.mobile-1.4.2.min.css"  />
+<link rel="stylesheet" href="../Content/css/desktop.css"  />
+<link rel="stylesheet" href="../Content/css/jplayer.morning.light.simple.css"  />
+<link rel="stylesheet" href="../Content/css/style.css"  />
+<link rel="stylesheet" href="../Content/css/site.css"  />
+<script src="../Content/js/jquery-1.9.1.min.js" ></script>
+<script src="../Content/js/jquery.jplayer.min.js" ></script>
+<script src="../Content/js/jplayer.playlist.min.js" ></script>
+<script src="../Content/js/site.js" ></script>
+<script src="../Content/js/jquery.mobile-1.4.2.min.js" ></script>
+<script id="panel-init">
+  $(function () {
+$("[data-role='panel']").panel();
+$("[data-role='listview']").listview({ "icon": "" });
+  });
+  $(document).on('pagebeforecreate', function (ev) {
+$(ev.target).find("[data-role=header]").addClass("jqm-header");
+var content = $(ev.target).find("[data-role=content]");
+var clone = $("[data-role=side-bar]").clone();
+var parent = $(clone.children()[1]).children()[0];
+$(parent).html($(content).html());
+clone.css("display", "block");
+$(content).empty();
+$(content).html(clone.html());
+  });
+  $(document).on('pagecreate', function (ev) {
+$(ev.target).find("[data-icon=bars]").remove();
+  });
+  $(document).on("pageshow", function () {
+if ($("#jsCode").length > 0) {
+$.globalEval($("#jsCode").text());
+}
+  });
+</script>
+</head>
+<body>
+<div data-role="side-bar" class="ui-grid-a" style="margin-top: 0px; width: 100%; height:100%;display: none">
+  <div class="ui-block-a">
+  </div>
+  <div class="ui-block-b" style="width: 100%; padding-left: 5px">
+<div data-role="main" class="mainPage">  
+</div>
+  </div>
+</div>
+<div data-role="panel" data-position="right" data-position-fixed="false" data-display="overlay" id="setting-panel" data-theme="a" style="width:220px">
+<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+  <li data-icon="delete" style="background-color:rgba(255,255,255,0.15);">
+&nbsp;
+  </li>
+ <li data-filtertext="ajax navigation model"><a href="../Bible.html"  rel="external" data-ajax="false">圣经总目录</a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_40.html" >40 马太福音 (太)<span class="ui-li-count">28</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_41.html" >41 马可福音 (可)<span class="ui-li-count">16</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_42.html" >42 路加福音 (路)<span class="ui-li-count">24</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_43.html" >43 约翰福音 (约)<span class="ui-li-count">21</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_44.html" >44 使徒行传 (徒)<span class="ui-li-count">28</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_45.html" >45 罗马书 (罗)<span class="ui-li-count">16</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_46.html" >46 哥林多前书 (林前)<span class="ui-li-count">16</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_47.html" >47 哥林多后书 (林后)<span class="ui-li-count">13</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_48.html" >48 加拉太书 (加)<span class="ui-li-count">6</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_49.html" >49 以弗所书 (弗)<span class="ui-li-count">6</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_50.html" >50 腓立比书 (腓)<span class="ui-li-count">4</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_51.html" >51 歌罗西书 (西)<span class="ui-li-count">4</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_52.html" >52 帖撒罗尼迦前书 (帖前)<span class="ui-li-count">5</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_53.html" >53 帖撒罗尼迦后书 (帖后)<span class="ui-li-count">3</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_54.html" >54 提摩太前书 (提前)<span class="ui-li-count">6</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_55.html" >55 提摩太后书 (提后)<span class="ui-li-count">4</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_56.html" >56 提多书 (多)<span class="ui-li-count">3</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_57.html" >57 腓利门书 (门)<span class="ui-li-count">1</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_58.html" >58 希伯来书 (来)<span class="ui-li-count">13</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_59.html" >59 雅各书 (雅)<span class="ui-li-count">5</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_60.html" >60 彼得前书 (彼前)<span class="ui-li-count">5</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_61.html" >61 彼得后书 (彼后)<span class="ui-li-count">3</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_62.html" >62 约翰一书 (约壹)<span class="ui-li-count">5</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_63.html" >63 约翰二书 (约贰)<span class="ui-li-count">1</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_64.html" >64 约翰三书 (约叁)<span class="ui-li-count">1</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_65.html" >65 犹大书 (犹)<span class="ui-li-count">1</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_66.html" >66 启示录 (启)<span class="ui-li-count">22</span></a></li>
+</ul>
+<!-- panel content goes here -->
+</div><!-- /panel -->
+<div data-role="page" class="jqm-demos jqm-home" id="home">
+    <div data-role="header" data-position="fixed">
+        <a href="Chapters_46.html#nav-panel" data-icon="bars" data-iconpos="notext">Navigation</a>
+        <h3>哥林多前书-1 Corinthians</h3>
+        <a href="Chapters_46.html#setting-panel" data-icon="gear" data-iconpos="notext">Settings</a>
+    </div><!-- /header -->
+
+    <div data-role="content" id="home-content">
+        <div style="font-size:14px;">主题：基督与十字架，是召会一切难处的解答</div>
+            <div data-role="collapsible">
+                <h3>简介</h3>
+                <ul style="padding-left:20px">
+                    <li>著者　使徒保罗。（一1，九1～2。）他在写本书二十五年前蒙召，（徒九3～6，15～16，）十四年前奉差到外邦作使徒。（徒十三1～4，8。）</li>
+                    <li>著时　约在主后五十九年，保罗住在以弗所满了三年时。（徒二十31，林前十六8。）</li>
+                    <li>著地　以弗所。（徒十九21～22，林前十六3～8，19。）</li>
+                    <li>受者　在哥林多的圣徒─召会，同着所有在各处呼求主耶稣基督之名的人。（一2。）</li>
+                </ul>
+
+            </div>
+        <ul data-role="listview" data-inset="true">
+
+<li><a target="_self" href="../Show/H1Cor01.html" >第一章</a></li>
+<li><a target="_self" href="../Show/H1Cor02.html" >第二章</a></li>
+<li><a target="_self" href="../Show/H1Cor03.html" >第三章</a></li>
+<li><a target="_self" href="../Show/H1Cor04.html" >第四章</a></li>
+<li><a target="_self" href="../Show/H1Cor05.html" >第五章</a></li>
+<li><a target="_self" href="../Show/H1Cor06.html" >第六章</a></li>
+<li><a target="_self" href="../Show/H1Cor07.html" >第七章</a></li>
+<li><a target="_self" href="../Show/H1Cor08.html" >第八章</a></li>
+<li><a target="_self" href="../Show/H1Cor09.html" >第九章</a></li>
+<li><a target="_self" href="../Show/H1Cor10.html" >第十章</a></li>
+<li><a target="_self" href="../Show/H1Cor11.html" >第十一章</a></li>
+<li><a target="_self" href="../Show/H1Cor12.html" >第十二章</a></li>
+<li><a target="_self" href="../Show/H1Cor13.html" >第十三章</a></li>
+<li><a target="_self" href="../Show/H1Cor14.html" >第十四章</a></li>
+<li><a target="_self" href="../Show/H1Cor15.html" >第十五章</a></li>
+<li><a target="_self" href="../Show/H1Cor16.html" >第十六章</a></li>
+</ul>
+</div><!-- /content -->
+</div><!-- /page -->
+<div style="width:100%;margin-top:50px;text-align:center;"></div><script type="text/javascript" src="../../7.js"></script></body></html>

@@ -1,0 +1,32 @@
+/* Page subtitle.  */
+h2{text-indent:-20px;margin-left:20px;}
+/* Boxed-up link - No underlining - White text. */
+span.wbox{color:white;}
+/* Hymn category title.  */
+h3{text-indent:-20px;margin-left:20px;}
+/* Hyper-links.  */
+p.links{line-height:120%;text-indent:-15px;margin-left:15px;}
+/* Box hyper-links.  */
+p.boxlinks{line-height:150%;text-indent:-15px;margin-left:15px;}
+/* Lyrics text for hymns with only one verse.  */
+p.sline{text-indent:-25px;margin-left:25px;}
+p.sline2{text-indent:-45px;margin-left:45px;}
+p.sline4{text-indent:-65px;margin-left:65px;}
+p.sline6{text-indent:-85px;margin-left:85px;}
+p.sline8{text-indent:-105px;margin-left:105px;}
+/* Lyrics text.  */
+p.line{text-indent:-50px;margin-left:50px;}
+p.line2{text-indent:-70px;margin-left:70px;}
+p.line4{text-indent:-90px;margin-left:90px;}
+p.line6{text-indent:-110px;margin-left:110px;}
+p.line8{text-indent:-130px;margin-left:130px;}
+/* Chorus text.  */
+p.cline{text-indent:-20px;margin-left:20px;}
+p.cline2{text-indent:-40px;margin-left:40px;}
+p.cline4{text-indent:-60px;margin-left:60px;}
+p.cline6{text-indent:-80px;margin-left:80px;}
+p.cline8{text-indent:-100px;margin-left:100px;}
+/* Verse number.  */
+.box{background-color:#f0f0f0;}
+.greenbox{background-color:#338833;
+color:#ffffff;font-weight:bold;}

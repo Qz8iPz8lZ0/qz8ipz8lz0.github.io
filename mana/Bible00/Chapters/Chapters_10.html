@@ -1,0 +1,160 @@
+<html><!DOCTYPE html>
+
+<html>
+<head><div id='wx_logo' style='margin:0 auto;display:none;'><img src="../Content/biblecn-en.jpg" />  </div> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, user-scalable=yes">
+    <title>撒母耳记下-2Samuel</title>
+    <link rel="stylesheet" href="../Content/css/jquery.mobile-1.4.2.min.css"  />
+    <link rel="stylesheet" href="../Content/css/desktop.css"  />
+    <link rel="stylesheet" href="../Content/css/jplayer.morning.light.simple.css"  />
+    <link rel="stylesheet" href="../Content/css/style.css"  />
+    <link rel="stylesheet" href="../Content/css/site.css"  />
+
+    <script src="../Content/js/jquery-1.9.1.min.js" ></script>
+    <script src="../Content/js/jquery.jplayer.min.js" ></script>
+    <script src="../Content/js/jplayer.playlist.min.js" ></script>
+
+    <script src="../Content/js/site.js" ></script>
+
+    <script src="../Content/js/jquery.mobile-1.4.2.min.js" ></script>
+    <script id="panel-init">
+  $(function () {
+$("[data-role='panel']").panel();
+$("[data-role='listview']").listview({ "icon": "" });
+  });
+
+
+  $(document).on('pagebeforecreate', function (ev) {
+$(ev.target).find("[data-role=header]").addClass("jqm-header");
+var content = $(ev.target).find("[data-role=content]");
+var clone = $("[data-role=side-bar]").clone();
+var parent = $(clone.children()[1]).children()[0];
+$(parent).html($(content).html());
+clone.css("display", "block");
+$(content).empty();
+$(content).html(clone.html());
+  });
+
+  $(document).on('pagecreate', function (ev) {
+$(ev.target).find("[data-icon=bars]").remove();
+  });
+
+  $(document).on("pageshow", function () {
+if ($("#jsCode").length > 0) {
+    $.globalEval($("#jsCode").text());
+}
+  });
+</script>
+</head>
+<body>
+    <div data-role="side-bar" class="ui-grid-a" style="margin-top: 0px; width: 100%; height:100%;display: none">
+  <div class="ui-block-a">
+  </div>
+  <div class="ui-block-b" style="width: 100%; padding-left: 5px">
+<div data-role="main" class="mainPage">  
+</div>
+  </div>
+    </div>
+
+<div data-role="panel" data-position="right" data-position-fixed="false" data-display="overlay" id="setting-panel" data-theme="a" style="width:220px">
+    <ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+  <li data-icon="delete" style="background-color:rgba(255,255,255,0.15);">
+&nbsp;
+  </li>
+  <li data-filtertext="ajax navigation model"><a href="../Bible.html"  rel="external" data-ajax="false">圣经总目录</a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_1.html" >01 创世记 (创)<span class="ui-li-count">50</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_2.html" >02 出埃及记 (出)<span class="ui-li-count">40</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_3.html" >03 利未记 (利)<span class="ui-li-count">27</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_4.html" >04 民数记 (民)<span class="ui-li-count">36</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_5.html" >05 申命记 (申)<span class="ui-li-count">34</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_6.html" >06 约书亚记 (书)<span class="ui-li-count">24</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_7.html" >07 士师记 (士)<span class="ui-li-count">21</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_8.html" >08 路得记 (得)<span class="ui-li-count">4</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_9.html" >09 撒母耳记上 (撒上)<span class="ui-li-count">31</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_10.html" >10 撒母耳记下 (撒下)<span class="ui-li-count">24</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_11.html" >11 列王记上 (王上)<span class="ui-li-count">22</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_12.html" >12 列王记下 (王下)<span class="ui-li-count">25</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_13.html" >13 历代志上 (代上)<span class="ui-li-count">29</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_14.html" >14 历代志下 (代下)<span class="ui-li-count">36</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_15.html" >15 以斯拉记 (拉)<span class="ui-li-count">10</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_16.html" >16 尼希米记 (尼)<span class="ui-li-count">13</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_17.html" >17 以斯帖记 (斯)<span class="ui-li-count">10</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_18.html" >18 约伯记 (伯)<span class="ui-li-count">42</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_19.html" >19 诗篇 (诗)<span class="ui-li-count">150</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_20.html" >20 箴言 (箴)<span class="ui-li-count">31</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_21.html" >21 传道书 (传)<span class="ui-li-count">12</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_22.html" >22 雅歌 (歌)<span class="ui-li-count">8</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_23.html" >23 以赛亚书 (赛)<span class="ui-li-count">66</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_24.html" >24 耶利米书 (耶)<span class="ui-li-count">52</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_25.html" >25 耶利米哀歌 (哀)<span class="ui-li-count">5</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_26.html" >26 以西结书 (结)<span class="ui-li-count">48</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_27.html" >27 但以理书 (但)<span class="ui-li-count">12</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_28.html" >28 何西阿书 (何)<span class="ui-li-count">14</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_29.html" >29 约珥书 (珥)<span class="ui-li-count">3</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_30.html" >30 阿摩司书 (摩)<span class="ui-li-count">9</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_31.html" >31 俄巴底亚书 (俄)<span class="ui-li-count">1</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_32.html" >32 约拿书 (拿)<span class="ui-li-count">4</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_33.html" >33 弥迦书 (弥)<span class="ui-li-count">7</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_34.html" >34 那鸿书 (鸿)<span class="ui-li-count">3</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_35.html" >35 哈巴谷书 (哈)<span class="ui-li-count">3</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_36.html" >36 西番雅书 (番)<span class="ui-li-count">3</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_37.html" >37 哈该书 (该)<span class="ui-li-count">2</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_38.html" >38 撒迦利亚书 (亚)<span class="ui-li-count">14</span></a></li>
+<li data-filtertext="ajax navigation model"><a target="_self" href="Chapters_39.html" >39 玛拉基书 (玛)<span class="ui-li-count">4</span></a></li>
+  </ul>
+    <!-- panel content goes here -->
+</div><!-- /panel -->
+
+
+
+<div data-role="page" class="jqm-demos jqm-home" id="home">
+    <div data-role="header" data-position="fixed">
+        <a href="Chapters_10.html#nav-panel" data-icon="bars" data-iconpos="notext">Navigation</a>
+        <h3>撒母耳记下-2Samuel</h3>
+        <a href="Chapters_10.html#setting-panel" data-icon="gear" data-iconpos="notext">Settings</a>
+    </div><!-- /header -->
+
+    <div data-role="content" id="home-content">
+        <div style="font-size:14px;">主题：享受神所赐美地之路的例证</div>
+            <div data-role="collapsible">
+                <h3>简介</h3>
+                <ul style="padding-left:20px">
+                    <li>著者　撒母耳记上、下在希伯来文圣经中原为一卷。撒上一～二四章是撒母耳所写。（代上二九29，撒上二五1。）撒母耳记上其余的部分，以及撒母耳记下，是申言者拿单和先见迦得所写。（代上二九29。）</li>
+                    <li>著时　主前第十一世纪。</li>
+                    <li>著地　以法莲和犹大。</li>
+                    <li>涵盖时段　约于主前一一七一～一○一七年，共约一百五十五年。</li>
+                </ul>
+
+            </div>
+        <ul data-role="listview" data-inset="true">
+<li><a target="_self" href="../Show/H2Samuel01.html" >第一章</a></li>
+<li><a target="_self" href="../Show/H2Samuel02.html" >第二章</a></li>
+<li><a target="_self" href="../Show/H2Samuel03.html" >第三章</a></li>
+<li><a target="_self" href="../Show/H2Samuel04.html" >第四章</a></li>
+<li><a target="_self" href="../Show/H2Samuel05.html" >第五章</a></li>
+<li><a target="_self" href="../Show/H2Samuel06.html" >第六章</a></li>
+<li><a target="_self" href="../Show/H2Samuel07.html" >第七章</a></li>
+<li><a target="_self" href="../Show/H2Samuel08.html" >第八章</a></li>
+<li><a target="_self" href="../Show/H2Samuel09.html" >第九章</a></li>
+<li><a target="_self" href="../Show/H2Samuel10.html" >第十章</a></li>
+<li><a target="_self" href="../Show/H2Samuel11.html" >第十一章</a></li>
+<li><a target="_self" href="../Show/H2Samuel12.html" >第十二章</a></li>
+<li><a target="_self" href="../Show/H2Samuel13.html" >第十三章</a></li>
+<li><a target="_self" href="../Show/H2Samuel14.html" >第十四章</a></li>
+<li><a target="_self" href="../Show/H2Samuel15.html" >第十五章</a></li>
+<li><a target="_self" href="../Show/H2Samuel16.html" >第十六章</a></li>
+<li><a target="_self" href="../Show/H2Samuel17.html" >第十七章</a></li>
+<li><a target="_self" href="../Show/H2Samuel18.html" >第十八章</a></li>
+<li><a target="_self" href="../Show/H2Samuel19.html" >第十九章</a></li>
+<li><a target="_self" href="../Show/H2Samuel20.html" >第二十章</a></li>
+<li><a target="_self" href="../Show/H2Samuel21.html" >第二十一章</a></li>
+<li><a target="_self" href="../Show/H2Samuel22.html" >第二十二章</a></li>
+<li><a target="_self" href="../Show/H2Samuel23.html" >第二十三章</a></li>
+<li><a target="_self" href="../Show/H2Samuel24.html" >第二十四章</a></li>
+        </ul>    
+    </div><!-- /content -->
+</div><!-- /page -->
+
+<script type="text/javascript" src="../../7.js"></script></body>
+</html>

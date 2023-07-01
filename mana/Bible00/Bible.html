@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, user-scalable=yes">
+    <title>Bible-圣经（中英对照）</title>
+    <link rel="stylesheet" href="Content/css/jquery.mobile-1.4.2.min.css"  />
+    <link rel="stylesheet" href="Content/css/desktop.css"  />
+    <link rel="stylesheet" href="Content/css/jplayer.morning.light.simple.css"  />
+    <link rel="stylesheet" href="Content/css/style.css"  />
+    <link rel="stylesheet" href="Content/css/site.css"  />
+    <script src="Content/js/jquery-1.9.1.min.js" ></script>
+    <script src="Content/js/jquery.jplayer.min.js" ></script>
+    <script src="Content/js/jplayer.playlist.min.js" ></script>
+    <script src="Content/js/site.js" ></script>
+    <script src="Content/js/jquery.mobile-1.4.2.min.js" ></script>
+    <script id="panel-init">
+        $(function () {
+            $("[data-role='panel']").panel();
+            $("[data-role='listview']").listview({ "icon": "" });
+        });
+        $(document).on('pagebeforecreate', function (ev) {
+            $(ev.target).find("[data-role=header]").addClass("jqm-header");
+            var content = $(ev.target).find("[data-role=content]");
+            var clone = $("[data-role=side-bar]").clone();
+            var parent = $(clone.children()[1]).children()[0];
+            $(parent).html($(content).html());
+            clone.css("display", "block");
+            $(content).empty();
+            $(content).html(clone.html());
+        });
+
+        $(document).on('pagecreate', function (ev) {
+            $(ev.target).find("[data-icon=bars]").remove();
+        });
+
+        $(document).on("pageshow", function () {
+            if ($("#jsCode").length > 0) {
+                $.globalEval($("#jsCode").text());
+            }
+        });
+</script>
+</head>
+<body>
+    <div data-role="side-bar" class="ui-grid-a" style="margin-top: 0px; width: 100%; height:100%;display: none">
+        <div class="ui-block-a">
+        </div>
+        <div class="ui-block-b" style="width: 100%; padding-left: 5px">
+            <div data-role="main" class="mainPage">  
+            </div>
+        </div>
+    </div>
+
+<div data-role="page" class="jqm-demos" id="aboutus">
+    <div data-role="header" data-position="fixed">
+<h3><a href="http://mana.stmn1.com/" target="_blank">Bible-圣经(中英对照)</a></h3>
+    </div><!-- /header -->
+
+    <div data-role="content" id="bible-books">
+        <div data-role="tabs" id="tabs">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="Bible.html#old" class="ui-btn-active">旧约圣经</a></li>
+                    <li><a href="Bible.html#new">新约圣经</a></li>
+                </ul>
+            </div>
+            <div id="old" >
+                <ul data-role="listview" data-inset="true">
+    <li><a target="_self" href="Chapters/Chapters_1.html" >01 创世记 (创)<span class="ui-li-count">50</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_2.html" >02 出埃及记 (出)<span class="ui-li-count">40</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_3.html" >03 利未记 (利)<span class="ui-li-count">27</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_4.html" >04 民数记 (民)<span class="ui-li-count">36</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_5.html" >05 申命记 (申)<span class="ui-li-count">34</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_6.html" >06 约书亚记 (书)<span class="ui-li-count">24</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_7.html" >07 士师记 (士)<span class="ui-li-count">21</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_8.html" >08 路得记 (得)<span class="ui-li-count">4</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_9.html" >09 撒母耳记上 (撒上)<span class="ui-li-count">31</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_10.html" >10 撒母耳记下 (撒下)<span class="ui-li-count">24</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_11.html" >11 列王记上 (王上)<span class="ui-li-count">22</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_12.html" >12 列王记下 (王下)<span class="ui-li-count">25</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_13.html" >13 历代志上 (代上)<span class="ui-li-count">29</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_14.html" >14 历代志下 (代下)<span class="ui-li-count">36</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_15.html" >15 以斯拉记 (拉)<span class="ui-li-count">10</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_16.html" >16 尼希米记 (尼)<span class="ui-li-count">13</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_17.html" >17 以斯帖记 (斯)<span class="ui-li-count">10</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_18.html" >18 约伯记 (伯)<span class="ui-li-count">42</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_19.html" >19 诗篇 (诗)<span class="ui-li-count">150</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_20.html" >20 箴言 (箴)<span class="ui-li-count">31</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_21.html" >21 传道书 (传)<span class="ui-li-count">12</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_22.html" >22 雅歌 (歌)<span class="ui-li-count">8</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_23.html" >23 以赛亚书 (赛)<span class="ui-li-count">66</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_24.html" >24 耶利米书 (耶)<span class="ui-li-count">52</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_25.html" >25 耶利米哀歌 (哀)<span class="ui-li-count">5</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_26.html" >26 以西结书 (结)<span class="ui-li-count">48</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_27.html" >27 但以理书 (但)<span class="ui-li-count">12</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_28.html" >28 何西阿书 (何)<span class="ui-li-count">14</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_29.html" >29 约珥书 (珥)<span class="ui-li-count">3</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_30.html" >30 阿摩司书 (摩)<span class="ui-li-count">9</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_31.html" >31 俄巴底亚书 (俄)<span class="ui-li-count">1</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_32.html" >32 约拿书 (拿)<span class="ui-li-count">4</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_33.html" >33 弥迦书 (弥)<span class="ui-li-count">7</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_34.html" >34 那鸿书 (鸿)<span class="ui-li-count">3</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_35.html" >35 哈巴谷书 (哈)<span class="ui-li-count">3</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_36.html" >36 西番雅书 (番)<span class="ui-li-count">3</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_37.html" >37 哈该书 (该)<span class="ui-li-count">2</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_38.html" >38 撒迦利亚书 (亚)<span class="ui-li-count">14</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_39.html" >39 玛拉基书 (玛)<span class="ui-li-count">4</span></a></li>    
+                </ul>
+            </div>
+            <div id="new">
+                <ul data-role="listview" data-inset="true">
+    <li><a target="_self" href="Chapters/Chapters_40.html" >40 马太福音 (太)<span class="ui-li-count">28</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_41.html" >41 马可福音 (可)<span class="ui-li-count">16</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_42.html" >42 路加福音 (路)<span class="ui-li-count">24</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_43.html" >43 约翰福音 (约)<span class="ui-li-count">21</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_44.html" >44 使徒行传 (徒)<span class="ui-li-count">28</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_45.html" >45 罗马书 (罗)<span class="ui-li-count">16</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_46.html" >46 哥林多前书 (林前)<span class="ui-li-count">16</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_47.html" >47 哥林多后书 (林后)<span class="ui-li-count">13</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_48.html" >48 加拉太书 (加)<span class="ui-li-count">6</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_49.html" >49 以弗所书 (弗)<span class="ui-li-count">6</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_50.html" >50 腓立比书 (腓)<span class="ui-li-count">4</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_51.html" >51 歌罗西书 (西)<span class="ui-li-count">4</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_52.html" >52 帖撒罗尼迦前书 (帖前)<span class="ui-li-count">5</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_53.html" >53 帖撒罗尼迦后书 (帖后)<span class="ui-li-count">3</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_54.html" >54 提摩太前书 (提前)<span class="ui-li-count">6</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_55.html" >55 提摩太后书 (提后)<span class="ui-li-count">4</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_56.html" >56 提多书 (多)<span class="ui-li-count">3</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_57.html" >57 腓利门书 (门)<span class="ui-li-count">1</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_58.html" >58 希伯来书 (来)<span class="ui-li-count">13</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_59.html" >59 雅各书 (雅)<span class="ui-li-count">5</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_60.html" >60 彼得前书 (彼前)<span class="ui-li-count">5</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_61.html" >61 彼得后书 (彼后)<span class="ui-li-count">3</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_62.html" >62 约翰一书 (约壹)<span class="ui-li-count">5</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_63.html" >63 约翰二书 (约贰)<span class="ui-li-count">1</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_64.html" >64 约翰三书 (约叁)<span class="ui-li-count">1</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_65.html" >65 犹大书 (犹)<span class="ui-li-count">1</span></a></li>    
+    <li><a target="_self" href="Chapters/Chapters_66.html" >66 启示录 (启)<span class="ui-li-count">22</span></a></li>    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../7.js"></script></body>
+</html>

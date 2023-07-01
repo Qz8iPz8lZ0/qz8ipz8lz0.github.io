@@ -1,0 +1,62 @@
+.color-image {
+    color : #47B547;
+    margin-right: 5px;
+}
+.color-link {
+	color: white;
+    font-weight: 200;
+    width:22px;
+    height:22px;
+    margin-right: 5px;
+    background-color: rgba(0,0,0,.3);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.3);
+    padding: 2px;
+    border:4px solid;
+    border-radius:1em;
+    -webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+}
+.color-pdf {
+    color: #990000;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.color-word {
+    color: #005CB8;
+    margin-right: 5px;
+}
+.color-excel {
+    color: #009933;
+    margin-right: 5px;
+}
+.color-folder {
+    color: #acacac;
+    margin-right: 5px;
+}
+sup {
+    color : red;
+}
+
+/* Custom indentations are needed because the length of custom labels differs from
+   the length of the standard labels */
+.custom-size-flipswitch.ui-flipswitch .ui-btn.ui-flipswitch-on {
+    text-indent: -5.9em;
+}
+.custom-size-flipswitch.ui-flipswitch .ui-flipswitch-off {
+    text-indent: 0.5em;
+}
+/* Custom widths are needed because the length of custom labels differs from
+   the length of the standard labels */
+.custom-size-flipswitch.ui-flipswitch {
+    width: 8.875em;
+}
+.custom-size-flipswitch.ui-flipswitch.ui-flipswitch-active {
+    padding-left: 7em;
+    width: 1.875em;
+}
+@media (min-width: 28em) {
+    /*Repeated from rule .ui-flipswitch above*/
+    .ui-field-contain > label + .custom-size-flipswitch.ui-flipswitch {
+        width: 1.875em;
+    }
+}

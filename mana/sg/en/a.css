@@ -1,0 +1,126 @@
+/*******************************************************************/
+/* GENERAL.  */
+/*******************************************************************/
+/* Font.  */
+body,p,th,td,a,li,h1,h2,h3,h4,h5,h6{font-family:tahoma;}
+/* Anchors.  */
+a,a:visited,a:hover{text-decoration:none;}
+a.disabled{color:#aaaaaa;}
+a.current{color:#444444;text-decoration:underline;}
+a.unseen,a.unseen:hover,a.unseen:visited{color:#ffffff;}
+a.unseenbold,a.unseenbold:hover,a.unseenbold:visited{color:#ffffff;font-weight:bold;}
+/* Standard table cell entities.  */
+th{font-weight:bold;}
+th,td{vertical-align:top;text-align:left;}
+th.right,td.right{text-align:right;}
+th.center,td.center{text-align:center;}
+td.gap{width:10px;}
+/* Page title.  */
+h1{margin:0px;font-size:110%;font-weight:bold;}
+/* Page subtitle.  */
+h2{margin:0px;font-size:100%;font-weight:bold;}
+/* Paragraphs.  */
+p,ol,ul{margin-top:6px;margin-bottom:6px;}
+/* Standard link - No underlining - Green text.  */
+span.link{text-decoration:none;color:#338833;}
+/* Boxed-up link - No underlining - White text. */
+span.wbox{text-decoration:none;color:blue;}
+/* Real white text.  */
+span.white{text-decoration:none;color:white;}
+span.white1{text-decoration:none;color:white;float:right;}
+/* Faded text.  */
+span.faded{color:#dddddd;}
+/*******************************************************************/
+/* HYMNS.  */
+/*******************************************************************/
+/* Title table.  */
+table.title{width:100%;margin:0px;border-top:2px solid white;}
+/* Title box. */
+div.titlebox{border:1px solid #66aa66;background-color:#338833;
+padding:4px;margin:0px;margin-bottom:1px;}
+/* Hymn category title.  */
+h3{font-size:90%;margin:0px;}
+/* Meta-info box.  */
+div.metabox{border:1px solid #cccccc;background-color:#fafef0;
+margin-top:2px;margin-bottom:2px;
+padding-left:22px;padding-right:16px;padding-top:10px;padding-bottom:10px;}
+/* Hymn numbers.  */
+p.nums{margin:0px;font-size:80%;font-weight:bold;}
+span.nums{color:#666666;}
+/* Small text.  */
+.small{margin:0px;font-size:80%;}
+/* Lyrics/Music/Meter table cells.  */
+td.lmm{margin:0px;white-space:nowrap;font-size:80%;
+padding-right:2px;width:35px;text-align:left;}
+td.colon{margin:0px;width:16px;text-align:center;font-size:80%;}
+/* Link to hymns with the same tune.  */
+p.sametune{margin:0px;font-size:80%;}
+p.sametune1{margin:0px;font-size:80%;margin-left:15px;}
+/* Hyper-links.  */
+p.links{}
+p.compactlinks{font-size:80%}
+/* Regular hyper-links box.  */
+div.linksbox{border:1px solid #cccccc;background-color:#ffffd0;
+margin:0px;margin-top:2px;margin-bottom:2px;
+padding:0px;padding-left:6px;padding-right:6px;}
+/* Box hyper-links.  */
+p.boxlinks{}
+/* Verses hyper-links box.  */
+div.vlinksbox{border:1px solid #cccccc;background-color:#eeeeff;
+margin:0px;margin-top:2px;margin-bottom:2px;
+padding:0px;padding-left:6px;padding-right:6px;}
+/* Notes.  */
+p.note,p.inote{font-size:90%;margin-left:4px;color:#aa4444;}
+p.inote{margin:0px;} /* inline note */
+/* Breaks between lyrics paragraph.  */
+a.br{font-size:50%;}
+span.tinybr{font-size:1px;}
+/* Verse paragraph.  */
+div.verse{margin:0px;}
+div.singleverse{margin:0px;margin-left:8px;}
+/* Chorus paragraph.  */
+div.chorus{margin:0px;margin-left:36px;color:#007777;}
+td.chorus{color:#007777;}
+th.chorus{text-align:right;font-size:80%;font-weight:normal;}
+/* Lyrics text for hymns with only one verse.  */
+td{text-align:left;vertical-align:top;}
+p.sline{margin:0px;text-indent:0px;margin-left:0px;}
+p.sline2{margin:0px;text-indent:0px;margin-left:18px;}
+p.sline4{margin:0px;text-indent:0px;margin-left:36px;}
+p.sline6{margin:0px;text-indent:0px;margin-left:54px;}
+p.sline8{margin:0px;text-indent:0px;margin-left:72px;}
+/* Lyrics text.  */
+p.line{margin:0px;text-indent:0px;margin-left:0px;}
+p.line2{margin:0px;text-indent:0px;margin-left:18px;}
+p.line4{margin:0px;text-indent:0px;margin-left:36px;}
+p.line6{margin:0px;text-indent:0px;margin-left:54px;}
+p.line8{margin:0px;text-indent:0px;margin-left:72px;}
+/* Chorus text.  */
+p.cline{margin:0px;text-indent:0px;margin-left:0px;}
+p.cline2{margin:0px;text-indent:0px;margin-left:18px;}
+p.cline4{margin:0px;text-indent:0px;margin-left:36px;}
+p.cline6{margin:0px;text-indent:0px;margin-left:54px;}
+p.cline8{margin:0px;text-indent:0px;margin-left:72px;}
+/* Verse number.  */
+.box{}
+.greenbox{color:blue;font-weight:bold;}
+.boxheader{color:#338833;font-weight:bold;}
+/* Sing-me verse number.  */
+.singme{color:#ff3333;font-weight:bold;}
+/* Line separator for paragraphs.  */
+.bottomline{margin:0px;border-bottom:1px solid #cccccc;
+margin-bottom:4px;padding-bottom:4px;}
+.topline{margin:0px;border-top:1px solid #cccccc;
+margin-top:4px;padding-top:4px;}
+/* Number links table for calculator.  */
+p.n{text-align:center;font-weight:bold;}
+th.n,td.n,td.home{vertical-align:middle;font-size:140%;}
+td.n,td.home{text-align:center;}
+td.n{border:1px solid #338833;background-color:#338833;}
+td.home{background-color:white;}
+th.n{text-align:left;border:1px solid #bbbbbb;background-color:#f7faea;
+font-weight:normal;}
+a.n{background-color:#338833;}
+q.n{color:#aaaaaa;}
+/* Num links indentation.  */
+div.indent{margin-left:8px;}
